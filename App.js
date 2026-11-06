@@ -8,12 +8,12 @@ import {
 
 // <-- Pega aquí TU firebaseConfig (el mismo que ya tenías)
 const firebaseConfig = {
-  apiKey: "AIzaSyB58PTeeTbmYHBYnZpXlnLK2j3FeYa6ils",
-  authDomain: "remedial-8508d.firebaseapp.com",
-  projectId: "remedial-8508d",
-  storageBucket: "remedial-8508d.firebasestorage.app",
-  messagingSenderId: "53075087125",
-  appId: "1:53075087125:web:9c4d296034a843711c231c"
+  apiKey: process.env.EXPO_PUBLIC_APIKEY,
+  authDomain: process.env.EXPO_PUBLIC_AUTHDOMAIN,
+  projectId: process.env.EXPO_PUBLIC_PROJECTID,
+  storageBucket: process.env.EXPO_PUBLIC_STORAGEBUCKET,
+  messagingSenderId: process.env.EXPO_PUBLIC_MESSAGINGSENDERID,
+  appId: process.env.EXPO_PUBLIC_APPID,
 };
 
 const app = initializeApp(firebaseConfig);
